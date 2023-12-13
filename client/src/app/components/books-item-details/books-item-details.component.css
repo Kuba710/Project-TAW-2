@@ -1,0 +1,16 @@
+.div-card {
+  display: flex;
+  justify-content: center;
+}
+
+.div-info {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+
+p {
+  max-width: 50vh;
+  word-wrap: break-word;
+}

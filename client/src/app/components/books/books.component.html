@@ -1,0 +1,14 @@
+
+
+<div class="container">
+  <div *ngIf="!!items$?.length" class="elems">
+    <div *ngFor="let item of items$">
+      <books-item
+        [image]="item.image" [title]="item.title" [id]="item.id">
+      </books-item>
+    </div>
+  </div>
+  <div *ngIf="!items$?.length">
+    No results.
+  </div>
+</div>
