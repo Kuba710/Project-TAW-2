@@ -1,8 +1,6 @@
-
-
 <div class="container">
   <div *ngIf="!!items$?.length" class="elems">
-    <div *ngFor="let item of items$">
+    <div *ngFor="let item of items$ | filter:filterText">
       <books-item
         [image]="item.image" [title]="item.title" [id]="item.id">
       </books-item>

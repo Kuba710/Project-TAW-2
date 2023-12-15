@@ -1,0 +1,28 @@
+<div class="container">
+  <h1 class="entry-title text-white"><span>Dodaj książkę</span></h1><hr>
+  <form action="post" autocomplete="off" method="POST">
+    <div class="input-group" style="margin-bottom: 15px">
+      <input [(ngModel)]="newBook.title" type="text" class="form-control"
+             name="title" placeholder="Tytuł" title="Tytuł">
+    </div>
+
+    <div class="input-group" style="margin-bottom: 15px">
+      <input [(ngModel)]="newBook.year" type="text" class="form-control"
+             name="title" placeholder="Rok" title="Rok">
+    </div>
+
+    <div class="input-group" style="margin-bottom: 15px">
+      <input [(ngModel)]="newBook.image" type="text" class="form-control"
+             name="title" placeholder="URL okładki" title="Image">
+    </div>
+
+    <div class="input-group" style="margin-bottom: 15px; height: 200px">
+      <input [(ngModel)]="newBook.description" type="text" class="form-control"
+             name="title" placeholder="Opis" title="Opis">
+    </div>
+
+    <button (click)="addBook()" class="btn btn-light" type="submit" title="Dodaj książkę">
+      Dodaj książkę
+    </button>
+  </form>
+</div>

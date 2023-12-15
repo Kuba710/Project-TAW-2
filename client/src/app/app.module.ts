@@ -17,7 +17,11 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { AddBookComponent } from './components/add-book/add-book.component';
+import { EditBookComponent } from './components/edit-book/edit-book.component';
+import { SearchBarComponent } from './shared/search-bar/search-bar.component';
 import { BooksHomeComponent } from './components/books-home/books-home.component';
+import { FilterTextPipe } from './pipes/filter-text.pipe';
 import { TitleFormatDirective } from './directives/title-format.directive';
 
 @NgModule({
@@ -32,7 +36,11 @@ import { TitleFormatDirective } from './directives/title-format.directive';
     LoginComponent,
     SignupComponent,
     NavbarComponent,
+    AddBookComponent,
+    EditBookComponent,
+    SearchBarComponent,
     BooksHomeComponent,
+    FilterTextPipe,
     TitleFormatDirective
   ],
   imports: [

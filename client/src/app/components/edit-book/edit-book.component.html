@@ -1,0 +1,28 @@
+<div class="container">
+  <h1 class="entry-title  text-white"><span>Edytuj film</span></h1><hr>
+  <form action="post" autocomplete="off" method="POST">
+    <div class="input-group" style="margin-bottom: 15px">
+      <input [(ngModel)]="newEditedBook.title" type="text" class="form-control"
+             name="title" placeholder="Tytuł" title="Tytuł">
+    </div>
+
+    <div class="input-group" style="margin-bottom: 15px">
+      <input [(ngModel)]="newEditedBook.year" type="text" class="form-control"
+             name="year" placeholder="Rok" title="Rok">
+    </div>
+
+    <div class="input-group" style="margin-bottom: 15px">
+      <input [(ngModel)]="newEditedBook.image" type="text" class="form-control"
+             name="image" placeholder="URL okładki" title="Image">
+    </div>
+
+    <div class="input-group" style="margin-bottom: 15px">
+      <input [(ngModel)]="newEditedBook.description" type="text" class="form-control"
+             name="description" placeholder="Opis" title="Opis">
+    </div>
+
+    <button (click)="editBook()" class="btn btn-primary" type="submit" title="Wprowadź zmiany">
+      Wprowadź zmiany
+    </button>
+  </form>
+</div>
