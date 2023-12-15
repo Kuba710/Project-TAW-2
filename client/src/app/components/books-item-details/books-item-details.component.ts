@@ -44,4 +44,12 @@ export class BooksItemDetailsComponent implements OnInit {
     this.dataService.deleteById(id);
     this.router.navigate(['/']);
   }
+
+  editBook() {
+      let id: string = '';
+          this.route.paramMap.subscribe((params: any) => {
+              id = params.get('id');
+          });
+        this.router.navigate(['/edit/' + id]);
+      }
 }
